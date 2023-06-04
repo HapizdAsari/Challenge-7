@@ -1,6 +1,5 @@
 require("dotenv").config();
 const path = require("path");
-const { Sequelize } = require("sequelize/types");
 
 const DB_TEST_FILE_PATH = path.join(__dirname, "../db/test.sqlite");
 const {DB_USER, DB_PASSWORD, DB_NAME, DB_HOST, DB_PORT} = process.env;
@@ -36,11 +35,3 @@ module.exports = {
         },
     },
 };
-
-const db = new Sequelize(DB_URL,{
-    define: {
-        timestamps:false
-    }
-});
-
-module.exports=db;
