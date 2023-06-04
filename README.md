@@ -7,3 +7,5 @@ This project is about implemetation of Unit Testing with jest and supertest, dep
 ![unit test coverage](Hasil-testing.png)
 
 ## Accessing API Documentation
+
+https://hapizdasari-challenge-7.up.railway.app/documentation
