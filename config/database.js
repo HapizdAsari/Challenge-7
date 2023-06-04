@@ -15,9 +15,14 @@ module.exports = {
         ssl: true,
     },
     test: {
+        username: DB_USER,
+        password: DB_PASSWORD,
+        database: `${DB_NAME}_test`,
+        host: DB_HOST,
+        port: DB_PORT,
         storage: DB_TEST_FILE_PATH,
         logging: false,
-        dialect: "sqlite",
+        dialect: "postgres",
     },
     production: {
         username: DB_USER,
